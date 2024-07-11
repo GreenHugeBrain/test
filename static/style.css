@@ -1,0 +1,281 @@
+* {
+    transition: all 0.3s ease-in-out;
+
+}
+
+body {
+    background-image: url(./compute-ea4c57a4.png);
+    color: #f40b0b;
+    font-family: TBC;
+    display: grid;
+    justify-items: center;
+
+}
+
+
+.item:hover {
+    background-image: #2c2f33;
+    transform: scale(1.02);
+}
+
+.list {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(240, 1, 1, 0.2);
+
+}
+
+.list:hover {
+    background-color: #3ca374;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.item .name,
+.item .price {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.item .user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #43b581;
+}
+
+
+
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(67, 181, 129, 0.7);
+    }
+
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 10px rgba(67, 181, 129, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(67, 181, 129, 0);
+    }
+}
+
+.item .badge {
+    background-color: #36393f;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 3px;
+    animation: pulse 2s infinite;
+}
+
+@font-face {
+    font-family: 'TBC';
+    /* Name your font family */
+    src: url('TBCContractica-Bold.ttf');
+    /* Locate the .ttf file within your directory*/
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    border-radius: 30px;
+    display: grid;
+    justify-items: center;
+    outline: red 10px;
+    outline-color: red;
+}
+
+.item-details {
+    width: 90vw;
+    display: grid;
+    border-radius: 10px;
+    justify-content: center;
+    background:rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.header {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #36393f;
+    font-weight: bold;
+    color: #707173;
+}
+
+.header div {
+    flex: 1;
+    text-align: left;
+}
+
+.item {
+    display: flex;
+    justify-items: baseline;
+    align-items: center;
+    padding: 10px 0;
+    width: 85vw;
+    font-size: 12px;
+    border-bottom: 1px solid #36393f;
+}
+
+.item:hover {
+    background-color: #2c2f33;
+    transform: scale(1.02);
+}
+
+.item>div {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.item img {
+    width: 60px;
+    height: 40px;
+    margin-top: 8px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.item .name {
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.item .price {
+    color: #43b581;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.item .date {
+    color: #72767d;
+}
+
+.item .user {
+    display: flex;
+    align-items: center;
+}
+
+.item .user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #43b581;
+}
+
+.item .level {
+    background-color: #36393f;
+    color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .badge {
+    background-color: #36393f;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 3px;
+    animation: pulse 2s infinite;
+}
+
+.item .listing {
+    background-color: #36393f;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.list {
+    background-color: #43b581;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list:hover {
+    background-color: #3ca374;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.linkusername {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.linkusername::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #43b581;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.linkusername:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.listing-active {
+    color: #43b581;
+    /* მწვანე ფერი გაყიდვაშია სტატუსისთვის */
+}
+
+.listing-inactive {
+    color: #f04747;
+    /* წითელი ფერი მოხსნილი სტატუსისთვის */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(67, 181, 129, 0.7);
+    }
+
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 10px rgba(67, 181, 129, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(67, 181, 129, 0);
+    }
+}
